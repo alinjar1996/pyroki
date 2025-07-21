@@ -30,7 +30,7 @@ def main():
 
     # Create interactive controller with initial position.
     ik_target = server.scene.add_transform_controls(
-        "/ik_target", scale=0.2, position=(0.61, 0.0, 0.56), wxyz=(0, 0, 1, 0)
+        "/ik_target", scale=0.2, position=(0.61, 0.0, 0.56), wxyz=(0, 0, 0, 1)
     )
     timing_handle = server.gui.add_number("Elapsed (ms)", 0.001, disabled=True)
 
