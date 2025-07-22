@@ -3,12 +3,16 @@
 <!-- quat = [w, x, y, z] -->
 <!-- For example, quat = [0.7071, 0.7071, 0, 0] represents a rotation of 90 degrees about the x-axis. End-effector should reach object from a side -->
 <!-- For example, quat = [0.0, 1.0, 0, 0] represents a rotation of 90 degrees about the x-axis. End-effector should reach object from top -->
-    <body name="target_0" pos="-0.3 -0.3 0.0" quat="0.0 1.0 0.0 0.0">
+    <body name="target_0" pos="-0.3 -0.3 0.4" quat="0.0 1.0 0.0 0.0">
         <!-- <joint type="free" damping="0.007" name="free_joint_0" group="1"/> -->
         <geom name="target_0" pos="0 0 0" rgba="0 0.6 0 1" size="0.02 0.02 0.02" type="box"/>
     </body>
 
-    <body name="obstacle_0" pos="-0.2 -0.15 0.0" quat="0.70711 0 0.70711 0">
+    <body name="target_1" pos="0.3 0.3 0.4" quat="0.0 1.0 0.0 0.0">
+        <geom name="target_1" pos="0 0 0" rgba="0.6 0.6 0.6 1" size="0.02 0.02 0.02" type="box" />
+    </body>
+
+    <body name="obstacle_0" pos="-0.2 -0.15 0.4" quat="0.70711 0 0.70711 0">
         <geom name="obstacle_0" pos="0 0 0" rgba="0.8 0 0 0" size="0.03 0.03 0.03" type="box"  />
         <site name="obstacle_0" pos="0 0 0" rgba="0.8 0 0 1" size="0.03 0.03 0.03" type="box" />
     </body>
